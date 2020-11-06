@@ -59,6 +59,7 @@ input {
 }
 .page-list-map{
   max-height: calc(40vh - 6em);
+  height: calc(40vh - 6em);
   overflow: scroll;
 }
 .page-list-sentence{

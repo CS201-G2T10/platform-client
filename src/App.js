@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './App.css';
-import qs from 'qs'
+// import qs from 'qs'
 
 /* eslint-disable no-console */
 
 const Page = () => {
-  const [word, setWord] = useState('trump');
-  const [num, setNum] = useState(50);
+  const [word, setWord] = useState('');
+  const [num, setNum] = useState(30);
   const [sentences, setSentences] = useState([]);
 
 
@@ -15,13 +15,13 @@ const Page = () => {
     const fetchParams = {
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
       },
       method: 'POST',
       mode: 'cors',
-      body: qs.stringify({string: word, length: num})
+      body: JSON.stringify({first_word: word, max_length: num})
     };
-    fetch("http://localhost:8081/api/model", fetchParams)
+    fetch("http://localhost:8080/api/model/predict", fetchParams)
       .then(res => res.json())
       .then((res) => {
         setSentences([
@@ -70,13 +70,13 @@ const Page = () => {
                 <div>
                   Generation Parameters:&nbsp;
                   &quot;
-                  {sentence.word}
+                  {sentence.joke}
                   &quot;
                   &nbsp; Length:&nbsp;
-                  {sentence.length}
+                  {sentence.max_length}
                 </div>
                 <div className="bigger">
-                  {sentence.sentence}
+                  {sentence.first_word}
                 </div>
               </div>
             )
