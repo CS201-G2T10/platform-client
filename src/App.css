@@ -22,13 +22,13 @@ select {
 }
 
 .bigger{
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .page {}
 .page-header {
   height: 20vh;
-  font-size: 4em;
+  font-size: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,8 +40,8 @@ select {
   align-items: center;
   justify-content: center;
 }
-form {
-  font-size: 1.5em;
+.page-input-div {
+  font-size: 1.3em;
 }
 input {
   font-size: 1em;
@@ -64,4 +64,5 @@ input {
 }
 .page-list-sentence{
   margin: 0.6em;
+  font-size: 1.5em;
 }
