@@ -50,7 +50,10 @@ const Page = () => {
           ...sentences
         ])
       })
-      .catch(err => console.log(err))
+      .catch((err) => {
+        closeModal();
+        console.log(err);
+      })
   }
 
   const handleSubmit = () => {
