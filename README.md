@@ -1,6 +1,7 @@
 # Text (Joke) Generator Frontend
 * Frontend of Text Generator backend application (https://github.com/CS201-G2T10/rest-api.git)
-* 
+* Text generator uses a Weighted Directed Graph
+* Compiles down predictions to a Range Tree (RBT) to improve time complexity of non greedy predictions
 
 <p align="center">
   <img src="https://imgur.com/b0dxWG5.png" width="300" title="Text Gen image">
