@@ -33,6 +33,7 @@ const Page = () => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
+      credentials: "include",
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify({first_word: word, max_length: num})
