@@ -3,8 +3,8 @@
 * 
 
 <p align="center">
-  <img src="https://imgur.com/b0dxWG5" width="300" title="Text Gen image">
-  <img src="https://imgur.com/gjx3nRe" width="300" title="Text Gen image">
+  <img src="https://imgur.com/b0dxWG5.png" width="300" title="Text Gen image">
+  <img src="https://imgur.com/gjx3nRe.png" width="300" title="Text Gen image">
 </p>
 
 ### Running the Application
