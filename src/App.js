@@ -33,12 +33,11 @@ const Page = () => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      credentials: "include",
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify({first_word: word, max_length: num})
     };
-    fetch("http://54.251.156.226:8080/api/model/predict", fetchParams)
+    fetch("http://localhost:8080/api/model/predict", fetchParams)
       .then(res => res.json())
       .then((res) => {
         closeModal()
